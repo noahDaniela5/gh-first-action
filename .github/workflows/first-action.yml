@@ -1,18 +1,13 @@
-#fist workflow name 
 name:  First Workflow 
-
-#reserved word that allows to launched the events on the block
-# workflow dispatch is one of the multiple events that exists in github actions and it allows to active manually the workflow
 on: workflow_dispatch
-
 jobs:
   first-job:
-    runs-on: ubuntu-latest  #determines the running environment
-    steps: # define the worflows steps 
-    - name: Print greeting # define the first name step
-      run: echo "hello world" #define the commands to run 
-    - name: Prnt goodbye  # define the second name step
-      run: echo "Done - bye!" #define the commands to run 
+    runs-on: ubuntu-latest 
+    steps: 
+    - name: Print greeting 
+      run: echo "hello world"  
+    - name: Print goodbye 
+      run: echo "Done - bye!"
     
       
       
